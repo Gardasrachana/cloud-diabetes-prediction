@@ -1,0 +1,239 @@
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: url('/static/diabetes_background.png') no-repeat center center fixed; 
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+header, footer {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+header h1 {
+    margin: 0;
+    color: #007bff;
+    font-size: 2.5rem;
+}
+
+.prediction-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.predict-button {
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.predict-button:hover {
+    background-color: #0056b3;
+}
+
+footer p {
+    font-size: 0.75rem;
+    color: #666;
+}
+.side-panel h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.side-panel ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.side-panel li {
+    background: url('/static/icons/checkmark.png') no-repeat left center;
+    padding-left: 30px; /* Adjust based on your checkmark icon size */
+    margin-bottom: 0.5rem;
+    background-size: 20px; /* Size of your checkmark icon */
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.right-panel li {
+    background-image: url('/static/icons/cross.png');
+}
+
+.side-panel ul {
+    list-style-type: none; /* Removes the default list style */
+    padding-left: 0; /* Removes default padding */
+}
+
+.side-panel li {
+    text-align: left; /* Aligns text to the left */
+    padding-left: 1em; /* Adds space before the list text */
+    position: relative;
+    margin-bottom: 0.5em; /* Adds space between list items */
+}
+
+.side-panel li:before {
+    content: "•"; /* Adds a bullet point */
+    position: absolute;
+    left: 0;
+    color: #007bff; /* Theme color for the bullet points */
+}
+
+/* Style for the form group */
+.form-group {
+    margin-bottom: 1em; /* Adds space below each form input */
+}
+
+/* New line for the predict button */
+.predict-button {
+    display: block; /* Makes the button a block-level element */
+    width: 100%; /* Full width */
+    /* Other styles */
+}
+
+/* Footer adjustment */
+footer p {
+    text-align: center; /* Centers the footer text */
+    color: #666; /* A light shade for the text */
+    font-size: 0.9rem; /* Slightly smaller font size */
+    margin-top: 1em; /* Adds space at the top of the footer */
+}
+
+/* Responsive adjustments for different screen sizes */
+@media (min-width: 768px) {
+    /* Adjustments for larger screens */
+}
+
+/* Use the specified Google font for the headings */
+.heading_font {
+    font-family: 'Pacifico', cursive;
+}
+
+/* Style adjustments for the results section */
+.results {
+    text-align: center; /* Center-align the content */
+    padding: 20px;
+    margin: 20px;
+}
+
+
+
+/* Consistent styling for both gif images */
+.gif, .gif1 {
+    width: 80%;
+    max-width: 400px; /* Adjust the size as necessary */
+    margin: 20px 0;
+}
+
+/* Styling for the footer */
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #f0f0f0; /* Light background for the footer */
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer-description {
+    margin: 0;
+    color: #333;
+}
+
+/* Ensure the close button has a clearer call to action */
+.thank-you a {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.thank-you a:hover {
+    background-color: #0056b3;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background: url('/static/diabetes_background.png') no-repeat right center fixed; 
+    background-size: cover;
+}
+
+.results {
+    width: 100%;
+    padding: 20px;
+    text-align: left;
+}
+
+.prediction-container {
+    max-width: 500px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    display: inline-block;
+    margin: 20px;
+}
+
+.danger, .safe {
+    font-weight: bold;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+}
+
+.results {
+    width: 100%;
+    padding: 20px;
+    text-align: left;
+    position: relative; /* Added this line to position child elements absolutely within it */
+}
+
+.button {
+    position: absolute; /* Absolute position */
+    bottom: 10px; /* 10px from the bottom */
+    left: 10px; /* 10px from the left */
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block; /* You can remove this line as it won't affect absolutely positioned elements */
+}
+
+

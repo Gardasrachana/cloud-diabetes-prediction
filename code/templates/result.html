@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Diabetes Predictor - Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='diabetes-favicon.ico') }}">
+    <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="results">
+        <div class="prediction-container">
+            <h1>Diabetes Predictor</h1>
+            {% if prediction == 1 %}
+                <h2>Prediction: <span class='danger'>Oops! You have DIABETES.</span></h2>
+                <img src="{{ url_for('static', filename='diabetes.webp') }}" alt="Diabetes Image">
+            {% else %}
+                <h2>Prediction: <span class='safe'>Great! You DON'T have diabetes.</span></h2>
+                <img src="{{ url_for('static', filename='no-diabetes.webp') }}" alt="No Diabetes Image">
+            {% endif %}
+            <a href="{{ url_for('home') }}" class="button">Make another prediction</a>
+            <p>Thank you for using the Diabetes Predictor.</p>
+        </div>
+    </div>
+    <footer class='footer'>
+        <p>Project by Priyatham,Gowtham,Tarun,Rishith Reddy and Yashwanth.</p>
+    </footer>
+</body>
+</html>
